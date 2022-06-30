@@ -125,7 +125,7 @@ posts.forEach((post) => {
           </a>
       </div>
       <div class="likes__counter">
-          Piace a <b id="like-counter-1" class="js-likes-counter">${post.likes}</b> persone
+          Piace a <b id="like-counter-2" class="js-likes-counter">${post.likes}</b> persone
       </div>
   </div>
 </div>`
@@ -137,8 +137,8 @@ const linkbtn = document.querySelector('.like-button.js-like-button')
 linkbtn.addEventListener('click', function(){
     console.log('mi piace');
     linkbtn.classList.toggle('red');
-   
-        
+    linkbtn.innerHTML = '<i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i><span class="like-button__label"> Non mi Piace</span>'
+       
         
        
     
