@@ -133,18 +133,25 @@ posts.forEach((post) => {
 });
 
 
-    
+const linkbtn = document.querySelectorAll('.like-button.js-like-button');
+
+for(let i=0; i< linkbtn.length; i++){
+   
+ console.log(linkbtn[i]);
+        
+        linkbtn[i].addEventListener('click', function(){
+             
+            console.log('mi piace')
+           
+            
+                linkbtn[i].classList.toggle('red');
+            
+        })
+}
+
     
  
-   let  linkbtn = document.querySelector('.like-button.js-like-button');
    
-    linkbtn.addEventListener('click', function(){
-    
-        console.log('mi piace');
-        linkbtn.classList.toggle('red');
-      
-        
-    })
    
         
         
