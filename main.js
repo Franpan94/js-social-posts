@@ -130,19 +130,31 @@ posts.forEach((post) => {
   </div>
 </div>`
 
+});
 
 
-const linkbtn = document.querySelector('.like-button.js-like-button')
+    
+    
+    let linkbtn;
+
+   for(let i=0 ; i===linkbtn; i++){
+     linkbtn = document.querySelector('.like-button.js-like-button');
+    linkbtn.addEventListener('click', function(){
+    
+        console.log('mi piace');
+        linkbtn.classList.toggle('red');
+       
+        
+    })
+   }
+        
+        
+   
+        
  
-linkbtn.addEventListener('click', function(){
-    console.log('mi piace');
-    linkbtn.classList.toggle('red');
-    linkbtn.innerHTML = '<i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i><span class="like-button__label"> Non mi Piace</span>'
+   
        
         
        
     
-})
-
-});
 
